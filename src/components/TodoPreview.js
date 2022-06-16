@@ -30,7 +30,7 @@ const TodoPreview = ({ todo, submitEditTodo, deleteTodo, toggleTodoDone }) => {
                 <button onClick={() => deleteTodo(todo._id)}>Delete</button>
                 <button onClick={openEditModal}>Edit</button>
             </div>
-            {isEditShown && <TodoEditModal id={todo._id} closeEdit={() => setIsEditShown(false)} callback={editTodo} />}
+            {isEditShown && <TodoEditModal todo={todo} closeEdit={() => setIsEditShown(false)} callback={editTodo} />}
         </li>
     )
 }
