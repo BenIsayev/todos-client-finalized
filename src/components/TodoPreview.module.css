@@ -1,0 +1,29 @@
+.todo-preview {
+    padding: 1rem;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-preview.done .title {
+    text-decoration: line-through;
+}
+
+.title {
+    display: flex;
+    gap: 1rem;
+}
+
+.actions {
+    display: flex;
+    gap: .5rem;
+}
+
+@media (max-width:500px) {
+    .todo-preview {
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+}

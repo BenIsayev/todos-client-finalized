@@ -1,0 +1,19 @@
+.main-header {
+    background-color: lightsalmon;
+    width: 100vw;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.main-header ul li:hover {
+    text-decoration: underline;
+}
+
+ul.main-nav {
+    display: flex;
+    gap: 1rem;
+}
